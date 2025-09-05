@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:travel_mate/services/router.dart';
-import 'screens/home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      title: 'ListenIQ',
+      title: 'TravelMate',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(

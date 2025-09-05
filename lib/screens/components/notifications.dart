@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:listen_iq/services/router_constants.dart';
-import 'package:listen_iq/screens/components/colors.dart';
 import 'dart:ui';
+
+import 'package:travel_mate/screens/components/colors.dart';
+import 'package:travel_mate/services/router_constants.dart';
 
 class NotificationScreen extends StatelessWidget {
   const NotificationScreen({super.key});

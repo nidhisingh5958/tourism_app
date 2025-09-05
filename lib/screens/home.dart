@@ -146,7 +146,7 @@ class _HomePageState extends State<HomeScreen> with TickerProviderStateMixin {
                           ),
                         ),
                         child: const Text(
-                          "ListenIQ",
+                          "TravelMate",
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 16,
@@ -243,7 +243,7 @@ class _HomePageState extends State<HomeScreen> with TickerProviderStateMixin {
                       scrollDirection: Axis.horizontal,
                       children: [
                         _buildAIToolCard(
-                          'AI audio\nservice',
+                          'Travel\nSafety',
                           Icons.edit_outlined,
                           onTap: () {
                             context.goNamed(RouteConstants.voiceAssistant);
@@ -251,7 +251,7 @@ class _HomePageState extends State<HomeScreen> with TickerProviderStateMixin {
                         ),
                         const SizedBox(width: 12),
                         _buildAIToolCard(
-                          'AI video\nservice',
+                          'Smart\n Destination',
                           Icons.image_outlined,
                           onTap: () {
                             // context.goNamed(RouteConstants.videoAssistant);
@@ -259,8 +259,16 @@ class _HomePageState extends State<HomeScreen> with TickerProviderStateMixin {
                         ),
                         const SizedBox(width: 12),
                         _buildAIToolCard(
-                          'AI\nscreen recorder',
+                          'Smart\nNavigation',
                           Icons.auto_awesome_outlined,
+                          onTap: () {
+                            // context.goNamed(RouteConstants.screenAssistant);
+                          },
+                        ),
+                        const SizedBox(width: 12),
+                        _buildAIToolCard(
+                          'Travel\nCommunity',
+                          Icons.code_outlined,
                           onTap: () {
                             // context.goNamed(RouteConstants.screenAssistant);
                           },

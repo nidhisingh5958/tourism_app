@@ -22,7 +22,7 @@ class _ChatHomeState extends State<ChatHome> {
       key: _scaffoldKey,
       drawer: const SideMenu(),
       appBar: AppHeader(
-        title: "ListenIQ",
+        title: "TravelMate",
         onMenuPressed: () {
           final scaffoldState = _scaffoldKey.currentState;
           if (scaffoldState?.hasDrawer == true) {

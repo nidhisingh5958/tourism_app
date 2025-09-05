@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:listen_iq/screens/components/appbar.dart';
-import 'package:listen_iq/services/router_constants.dart';
+import 'package:travel_mate/screens/components/appbar.dart';
+import 'package:travel_mate/services/router_constants.dart';
 
 class HistoryScreen extends StatelessWidget {
   const HistoryScreen({super.key});
@@ -18,26 +18,20 @@ class HistoryScreen extends StatelessWidget {
         child: ListView(
           children: const [
             // Today section
-            HistorySection(
-              title: 'Today',
-              items: ["What is helirab-d used for?"],
-            ),
+            HistorySection(title: 'Today', items: ['Passport updated']),
 
             // Previous 30 days section
             HistorySection(
               title: 'Previous 30 days',
               items: [
-                "Suggest a medicine for stomachache",
-                "What should I do to control my cholesterol?",
-                "What is the dosage of paracetamol",
+                "Visa application submitted",
+                "Travel itinerary created",
+                "Local guide booked",
               ],
             ),
 
             // Older section
-            HistorySection(
-              title: 'Older',
-              items: ["What are the symptoms of malaria?"],
-            ),
+            HistorySection(title: 'Older', items: ["Flight tickets purchased"]),
           ],
         ),
       ),

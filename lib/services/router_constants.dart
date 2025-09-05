@@ -11,14 +11,17 @@ class RouteConstants {
   static String history = "history";
   static String chatDetail = "chatDetail";
   static String voiceAssistant = "voiceAssistant";
+  static String mapsService = "mapsService";
+
+  static String notifications = "notifications";
 
   // settings routes
-  static String notifications = "notifications";
   static String settings = "settings";
   static String profileSettings = "profileSettings";
   static String securitySettings = "securitySettings";
   static String notificationsSettings = "notificationsSettings";
   static String about = "about";
+  static String helpAndSupport = "helpAndSupport";
 
   // error routes
   static String error = "error";

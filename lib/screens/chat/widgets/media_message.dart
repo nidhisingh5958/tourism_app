@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:listen_iq/screens/chat/entities/message_bot.dart';
+import 'package:travel_mate/screens/chat/entities/message_bot.dart';
 
 class MediaMessage extends StatelessWidget {
   const MediaMessage({required this.message, super.key});

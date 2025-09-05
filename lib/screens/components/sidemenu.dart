@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:listen_iq/services/router_constants.dart';
+import 'package:travel_mate/services/router_constants.dart';
 
 class SideMenu extends StatefulWidget {
   const SideMenu({super.key});
@@ -44,6 +44,7 @@ class _SideMenuState extends State<SideMenu> {
       child: ListView(
         padding: const EdgeInsets.symmetric(vertical: 40, horizontal: 16),
         children: [
+          const SizedBox(height: 16),
           _buildHeader(),
           const SizedBox(height: 32),
           _buildServicesSection(context),
@@ -63,7 +64,7 @@ class _SideMenuState extends State<SideMenu> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const Text(
-            "Menu",
+            "TravelMate",
             style: TextStyle(
               color: Colors.white,
               fontSize: 24,
@@ -72,7 +73,7 @@ class _SideMenuState extends State<SideMenu> {
           ),
           const SizedBox(height: 4),
           Text(
-            "Choose a service",
+            "Your journey starts here",
             style: TextStyle(
               fontSize: 14,
               color: Colors.white.withOpacity(0.6),
@@ -90,33 +91,41 @@ class _SideMenuState extends State<SideMenu> {
         _buildSectionHeader("Services"),
         const SizedBox(height: 12),
         _buildMenuItem(
-          icon: Icons.videocam,
-          label: 'Video',
+          icon: Icons.person,
+          label: 'Profile',
           color: const Color(0xFFEC4899),
           onTap: () {
             _closeDrawer();
-            // Navigate to video service when route is available
-            // _navigateAndClose(RouteConstants.videoService);
+            // Navigate to profile service when route is available
+            // _navigateAndClose(RouteConstants.profileService);
           },
         ),
         _buildMenuItem(
-          icon: Icons.screen_share,
-          label: 'Screen Recording',
+          icon: Icons.emergency,
+          label: 'Emergency',
           color: const Color(0xFF8B5CF6),
           onTap: () {
             _closeDrawer();
-            // Navigate to screen recording service when route is available
-            // _navigateAndClose(RouteConstants.screenRecording);
+            // Navigate to emergency service when route is available
+            // _navigateAndClose(RouteConstants.emergencyService);
           },
         ),
         _buildMenuItem(
-          icon: Icons.audiotrack,
-          label: 'Audio',
+          icon: Icons.flight,
+          label: 'Trips',
           color: const Color(0xFFF59E0B),
           onTap: () {
             _closeDrawer();
-            // Navigate to audio service when route is available
-            // _navigateAndClose(RouteConstants.audioService);
+            // Navigate to trips service when route is available
+            // _navigateAndClose(RouteConstants.tripsService);
+          },
+        ),
+        _buildMenuItem(
+          icon: Icons.map,
+          label: 'Maps',
+          color: const Color(0xFF3B82F6),
+          onTap: () {
+            // _navigateAndClose(RouteConstants.mapsService);
           },
         ),
       ],

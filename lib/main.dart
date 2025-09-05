@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:listen_iq/services/router.dart';
+import 'package:travel_mate/services/router.dart';
 import 'screens/home.dart';
 
 void main() {

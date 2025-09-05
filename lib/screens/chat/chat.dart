@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:listen_iq/screens/chat/data/messages_bot.dart';
-import 'package:listen_iq/screens/chat/entities/message_bot.dart';
-import 'package:listen_iq/screens/chat/entities/message_group.dart';
-import 'package:listen_iq/screens/chat/widgets/bot_search_bar.dart';
-import 'package:listen_iq/screens/chat/widgets/chat_message_widget.dart';
-import 'package:listen_iq/screens/components/appbar.dart';
+import 'package:travel_mate/screens/chat/data/messages_bot.dart';
+import 'package:travel_mate/screens/chat/entities/message_bot.dart';
+import 'package:travel_mate/screens/chat/entities/message_group.dart';
+import 'package:travel_mate/screens/chat/widgets/bot_search_bar.dart';
+import 'package:travel_mate/screens/chat/widgets/chat_message_widget.dart';
+import 'package:travel_mate/screens/components/appbar.dart';
 
 class ChatScreen extends StatefulWidget {
   const ChatScreen({super.key});
